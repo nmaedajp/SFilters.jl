@@ -1,0 +1,13 @@
+name = "SFilters"
+uuid = "cc5fff61-e9d2-4954-93e3-780cb2579f4b"
+authors = ["Naoki Maeda <naoki.maeda.jp@gmail.com> and contributors"]
+version = "1.0.0-DEV"
+
+[compat]
+julia = "1.8"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
