@@ -1,7 +1,7 @@
 module SFilters
 
 export tandem, recfil, recres, recres_s
-export buthip, butlop, btfllc, btflhc
+export buthip, butlop, butpas, btfllc, btflhc, btbdp
 
 include("tandem.jl")
 include("recfil.jl")
