@@ -9,8 +9,10 @@ include("recres.jl")
 
 include("buthip.jl")
 include("butlop.jl")
+include("butpas.jl")
 
 include("btfllc.jl")
 include("btflhc.jl")
+include("btbdp.jl")
 
 end
