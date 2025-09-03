@@ -19,6 +19,10 @@
 * function btflhc(wavein,fp,fs,hz,ndr)
 * バターワース型ハイカット（ローパス）フィルターのデータへの適用
 
+## btbdp
+* バターワース型バンドパスフィルターのデータへの適用
+* function btbdp(wavein, fl, fh, fs, hz, ndr)
+
 ## buthip
 * function buthip(fp::Float64, fs::Float64, ap::Float64, as::Float64)
 * バターワース型ハイパスフィルターの設計．
@@ -27,9 +31,13 @@
 * function butlop(fp::Float64, fs::Float64, ap::Float64, as::Float64)
 * バターワース型ローパスフィルターの設計．
 
+## butpas
+* function butpas(fl, fh, fs, ap, as)
+* バターワース型バンドパスフィルターの設計．
+
 ## 予定
 
-butbds，butbdp も気が向けば変換する．
+butbds も気が向けば変換する．
 
 [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://nmaedajp.github.io/SFilters.jl/stable/)
 [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://nmaedajp.github.io/SFilters.jl/dev/)
