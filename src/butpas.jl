@@ -15,7 +15,7 @@ function butpas(fl, fh, fs, ap, as)
     
         # 不正な入力の処理
         if wl == wh || wl == 0.0 || wh >= hp || ws == 0.0 || ws >= hp || (ws - wl) * (ws - wh) <= 0.0
-            error("(butpas) fl = $(fl), fp = $(fp), fs = $(fs). fl, fp or fs is not correct.")
+            error("(butpas) fl = $(fl), fs = $(fs). fl, fp or fs is not correct.")
         end
     
         # フィルタ係数の計算
