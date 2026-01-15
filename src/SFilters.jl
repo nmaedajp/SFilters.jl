@@ -1,6 +1,7 @@
 module SFilters
 
 using RdWaveFiles
+using FFTGrp
 
 export tandem, recfil, recres, recres_s
 export buthip, butlop, butpas, btfllc, btflhc, btbdp
