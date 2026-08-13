@@ -35,9 +35,25 @@
 * function butpas(fl, fh, fs, ap, as)
 * バターワース型バンドパスフィルターの設計．
 
-## 予定
+## dwsamp
+* function dwsamp(wave::Wavedata; nstep=2, fl=0.1, fh=40.0, fs=50.0)
+  * 200 Hz を 100 Hzにダウンサンプリング想定している．
+  * ダウンサンプリングするに際して，バンドパスフィルターをかけている．
+  * 入力の wave は，Wavedata 型．
+  * 戻り値は，Wavedata 型となる 
 
-butbds も気が向けば変換する．
+## bandpass
+* function bandpass(wave::Wavedata; fl=0.1, fh=40.0, fs=50.0)
+  * dwsamp の中から，呼んでいる．
+  * バンドパスフィルターをかける．
+  * 入力は，Wavedata型の波形データ．
+  * 直線成分を取り除いている．
+
+## lowcut
+* function lowcut(wave::Wavedata; fp=0.1, fs=0.0720)
+  * ローカットフィルターをかける．
+  * 入力は，Wavedata型の波形データ．
+  * 直線成分を取り除いている．
 
 [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://nmaedajp.github.io/SFilters.jl/stable/)
 [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://nmaedajp.github.io/SFilters.jl/dev/)
